@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  })
  export class DetailPage {
 
- 	_imgs:any[]=['assets/imgs/live-music.jpg','assets/imgs/live-music.jpg','assets/imgs/live-music.jpg','assets/imgs/live-music.jpg','assets/imgs/live-music.jpg','assets/imgs/live-music.jpg'];
+ 	_imgs:any[]=['assets/imgs/live-music.jpeg','assets/imgs/live-music.jpeg','assets/imgs/live-music.jpeg','assets/imgs/live-music.jpeg','assets/imgs/live-music.jpeg','assets/imgs/live-music.jpeg'];
 
  	constructor(public navCtrl: NavController, public navParams: NavParams) {
  	}
@@ -23,4 +23,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  		console.log('ionViewDidLoad DetailPage');
  	}
 
+ 	public tap: string = "100%";
+
+ 	tapEvent(e) {
+ 		if (this.tap != "1240px") {
+ 			this.tap = "1240px";
+ 		}
+ 		else
+ 			this.tap = "100%";
+ 	}
  }
