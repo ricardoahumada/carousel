@@ -12,6 +12,7 @@
 		<ion-slides slidesPerView="3">
 			<ion-slide *ngFor="let item of _imgs">
 				<img [src]="item" (click)="goToDetailPage()"/>
+				<!-- <img [src]="item" (click)="presentProfileModal"/> -->
 			</ion-slide>
 			<ion-slide>
 				Nueva[+]
